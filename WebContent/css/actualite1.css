@@ -1,0 +1,48 @@
+ /* ------------------------ */
+        /*        GRILLE CARDS      */
+        /* ------------------------ */
+        .actualites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .actualite-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .actualite-thumb {
+            width: 100%;
+            max-height: 200px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .actualite-thumb img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .actualite-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .actualite-desc {
+            margin-bottom: 12px;
+            white-space: pre-wrap;
+        }
+        .actualite-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e8e8e8;
+            border-radius: 4px;
+            font-size: 13px;
+        }

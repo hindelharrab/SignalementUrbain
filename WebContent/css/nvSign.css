@@ -1,0 +1,127 @@
+/* ------------------------ */
+/*       SECTION CARTE       */
+/* ------------------------ */
+.main-dashboard {
+    padding: 0rem 0;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 750px;
+    gap: 1rem;
+}
+
+/* Section Card */
+.section-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+/* ------------------------ */
+/*      HEADER DE SECTION    */
+/* ------------------------ */
+.section-header-modern {
+    margin-bottom: 15px;
+}
+.header-title h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+/* ------------------------ */
+/*       GRILLE CARDS        */
+/* ------------------------ */
+.signalements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* ------------------------ */
+/*       CARTE SIGNAL        */
+/* ------------------------ */
+.signalement-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.signalement-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.signalement-thumb {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.signalement-thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.signalement-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.signalement-desc {
+    margin-bottom: 10px;
+  
+    color: #555;
+}
+
+.signalement-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #e8e8e8;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.btn-action {
+    background-color: #84a98c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-action:hover {
+    background-color: #84a98c;
+}
+
+/* Empty state identique aux actualités */
+.empty-state-modern {
+    text-align: center;
+    padding: 50px 0;
+    color: #888;
+}
+.empty-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.container-citoyen {
+    max-width: 1600px; /* largeur max, tu peux ajuster */
+    margin: 40px auto; /* centrer horizontalement */
+    padding: 0 15px;   /* padding pour petits écrans */
+}
